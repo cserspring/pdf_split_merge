@@ -1,7 +1,5 @@
-# pdf_split_merge
-Split and merge pdf files
+<b>Usage:</b>
 
-Usage:
 1. When you want to split a PDF file into multiple parts.
    Please use "PDFSplitMerge.exe -split [SourceFile] [Pages] [OutputFolder]", DO NOT contain any space in [Pages].
    
