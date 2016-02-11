@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="itextsharp">
-      <HintPath>E:\libs\itextsharp-all-5.5.7\itextsharp-dll-core\itextsharp.dll</HintPath>
+      <HintPath>E:\libs\itextsharp-all-5.5.8\itextsharp-dll-core\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -40,7 +40,7 @@
             else if (args[0].Equals("-merge", StringComparison.OrdinalIgnoreCase))
             {
                 string[] sources = new string[args.Length - 2];
-                string outputPath = args[3].EndsWith("\\") ? args[3] : (args[3] + "\\");
+                string outputPath = args[args.Length - 1].EndsWith("\\") ? args[args.Length - 1] : (args[args.Length - 1] + "\\");
 
                 for (int i = 0; i < args.Length - 2;i++)
                 {
