@@ -7,8 +7,16 @@
     {
         static void Main(string[] args)
         {
-            const string usage = "PDFSplitMerge.exe -split [SourceFile] [Pages] [OutputFolder]\n" +
-                                 "PDFSplitMerge.exe -merge [File1] [File2] ... [FileN] [OutputFolder]";
+            const string usage = "-usage\n" +
+                                 "      Print the usage information.\n" +
+                                 "-split\n" +
+                                 "      Please use \"PDFSplitMerge.exe -split [SourceFile] [Pages] [OutputFolder]\", DO NOT contain any space in [Pages].\n" +
+                                 "      For example:\n" +
+                                 "      PDFSplitMerge.exe -split c:\\Users\\foo\\Desktop\\bar.pdf 1,2,3-4 c:\\Users\\foo\\Desktop\\\n" +
+                                 "-merge\n" +
+                                 "      Please use \"PDFSplitMerge.exe -merge [File1] [File2] ... [FileN] [OutputFolder]\"\n" +
+                                 "      For example:\n" +
+                                 "      PDFSplitMerge.exe -merge c:\\Users\\foo\\Desktop\\bar.pdf c:\\Users\\foo\\Desktop\\bar2.pdf c:\\Users\\foo\\Desktop\\";
             if (args[0].Equals("-usage", StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine(usage);

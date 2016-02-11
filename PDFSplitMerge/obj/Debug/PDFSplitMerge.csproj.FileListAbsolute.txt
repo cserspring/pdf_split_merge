@@ -3,6 +3,5 @@ C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\bin\Debug\PDFSplit
 C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\bin\Debug\PDFSplitMerge.pdb
 C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\bin\Debug\itextsharp.dll
 C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\bin\Debug\itextsharp.xml
-C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\obj\Debug\PDFSplitMerge.csprojResolveAssemblyReference.cache
 C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\obj\Debug\PDFSplitMerge.exe
 C:\Users\shuwa\Documents\GitHub\pdf_split_merge\PDFSplitMerge\obj\Debug\PDFSplitMerge.pdb
