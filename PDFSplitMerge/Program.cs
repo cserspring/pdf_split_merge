@@ -22,6 +22,7 @@ namespace PDFSplitMerge
     {
         static void Main(string[] args)
         {
+            int argsLen = args.Length;
             const string usage = "-usage\n" +
                                  "      Print the usage information.\n" +
                                  "-split\n" +
@@ -32,11 +33,11 @@ namespace PDFSplitMerge
                                  "      Please use \"PDFSplitMerge.exe -merge [File1] [File2] ... [FileN] [OutputFolder]\"\n" +
                                  "      For example:\n" +
                                  "      PDFSplitMerge.exe -merge c:\\Users\\foo\\Desktop\\bar.pdf c:\\Users\\foo\\Desktop\\bar2.pdf c:\\Users\\foo\\Desktop\\";
-            if (args[0].Equals("-usage", StringComparison.OrdinalIgnoreCase))
+            if (argsLen >= 1 && args[0].Equals("-usage", StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine(usage);
             }
-            else if (args[0].Equals("-split", StringComparison.OrdinalIgnoreCase))
+            else if (argsLen == 4 && args[0].Equals("-split", StringComparison.OrdinalIgnoreCase))
             {
                 string sourceFile = args[1];
                 string sourceFileNameWithExtension = sourceFile.Split(new char[] {'\\'}, StringSplitOptions.RemoveEmptyEntries).Last();
@@ -60,12 +61,12 @@ namespace PDFSplitMerge
                     }
                 }
             }
-            else if (args[0].Equals("-merge", StringComparison.OrdinalIgnoreCase))
+            else if (argsLen >= 4 && args[0].Equals("-merge", StringComparison.OrdinalIgnoreCase))
             {
-                string[] sources = new string[args.Length - 2];
-                string outputPath = args[args.Length - 1].EndsWith("\\") ? args[args.Length - 1] : (args[args.Length - 1] + "\\");
+                string[] sources = new string[argsLen - 2];
+                string outputPath = args[argsLen - 1].EndsWith("\\") ? args[argsLen - 1] : (args[argsLen - 1] + "\\");
 
-                for (int i = 0; i < args.Length - 2;i++)
+                for (int i = 0; i < argsLen - 2; i++)
                 {
                     sources[i] = args[i + 1];
                 }
