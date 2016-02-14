@@ -1,4 +1,16 @@
-﻿namespace PDFSplitMerge
+﻿// ----------------------------------------------------------------------------------------------
+// <copyright file="PdfUtilities.cs" company="">
+//     All rights reserved.
+// </copyright>
+// <author>
+//     cserspring@github
+// </author>
+// <summary>
+//     Utility functions of PDF file splitter and merger.
+// </summary>
+//-------------------------------------------------------------------------------------------------
+
+namespace PDFSplitMerge
 {
     using System;
     using System.IO;

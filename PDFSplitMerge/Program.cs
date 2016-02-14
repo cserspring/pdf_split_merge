@@ -1,8 +1,23 @@
-﻿namespace PDFSplitMerge
+﻿// ----------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="">
+//     All rights reserved.
+// </copyright>
+// <author>
+//     cserspring@github
+// </author>
+// <summary>
+//     PDF file splitter and merger.
+// </summary>
+//-------------------------------------------------------------------------------------------------
+
+namespace PDFSplitMerge
 {
     using System;
     using System.Linq;
 
+    /// <summary>
+    /// PDF file splitter and merger.
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
