@@ -46,7 +46,7 @@ namespace PDFSplitMerge
                 string outputPath = args[3].EndsWith("\\") ? args[3] : (args[3] + "\\");
 
                 string[] arr = args[2].Split(new char[]{','}, StringSplitOptions.RemoveEmptyEntries);
-                for (int i = 0; i < arr.Length; i++)
+                for (int i = 0; i < arr.Length; ++i)
                 {
                     string[] startAndEnd = arr[i].Split(new char[] {'-'}, StringSplitOptions.RemoveEmptyEntries);
                     int start = int.Parse(startAndEnd[0]);
@@ -66,7 +66,7 @@ namespace PDFSplitMerge
                 string[] sources = new string[argsLen - 2];
                 string outputPath = args[argsLen - 1].EndsWith("\\") ? args[argsLen - 1] : (args[argsLen - 1] + "\\");
 
-                for (int i = 0; i < argsLen - 2; i++)
+                for (int i = 0; i < argsLen - 2; ++i)
                 {
                     sources[i] = args[i + 1];
                 }

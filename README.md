@@ -1,3 +1,5 @@
+You can use the .exe file in the bin\Debug folder.
+
 -usage
 
       Print the usage information.
